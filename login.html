@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大事件 - 登录/注册</title>
+    <!-- 导入layUI 样式表 -->
+    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+    <!-- 导入自己的css -->
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+    <!-- 顶部的logo -->
+    <div class="layui-main">
+        <img src="./assets/images/logo.png" alt="" class="logo">
+    </div>
+    <!-- 登录注册模块 -->
+    <div class="loginAndRegBox">
+        <!-- 后台管理 -->
+        <div class="titleBox"></div>
+        <!-- 登录注册模块 -->
+        <div class="login-box">
+            <!-- 登录面板 -->
+            <form id="form_login" class="layui-form" action="" >
+                <!-- 用户名按钮 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-login-wechat"></i>
+                    <input value="sewr" type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码按钮 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-login-qq"></i>
+                    <input value="123123" type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 按钮 -->
+                <div class="layui-form-item">
+                    <!-- lay-submit 必须写 -->
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit >登录</button>
+                </div>
+                <div class="layui-form-item">
+                    <a href="javasrcipt:;" id="link_reg" class="links">去注册账号</a>
+                </div>
+            </form>
+        </div>
+        <div class="reg-box">
+            <!-- 注册面板 -->
+            <form id="form_reg" class="layui-form" action="">
+                <!-- 用户名按钮 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-login-wechat"></i>
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码按钮 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-login-qq"></i>
+                    <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 确认密码按钮 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-login-qq"></i>
+                    <input type="password" name="repassword" required lay-verify="required|pwd|repwd" placeholder="请再次确认密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 按钮 -->
+                <div class="layui-form-item">
+                    <!-- lay-submit 必须写 -->
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit >立即注册</button>
+                </div>
+                <div class="layui-form-item">
+                    <a href="javasrcipt:;" id="link_login" class="links">去登录</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 导入layUI js文件 -->
+    <script src="./assets/lib/layui/layui.all.js"></script>
+    <!-- 导入JQ文件 -->
+    <script src="./assets/lib/jquery.js"></script>
+    <!-- 导入自己js文件 -->
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>
