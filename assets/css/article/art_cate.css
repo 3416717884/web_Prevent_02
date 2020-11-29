@@ -6,3 +6,12 @@ html,body {
 body {
     padding: 15px;
 }
+.layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.layui-form {
+    padding-top: 20px;
+    padding-right: 40px;
+}
